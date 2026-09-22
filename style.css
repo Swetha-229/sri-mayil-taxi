@@ -423,3 +423,52 @@ footer p {
     }
 
 }
+.cars {
+    padding: 80px 7%;
+    text-align: center;
+    background: #ffffff;
+}
+
+.cars h2 {
+    font-size: 40px;
+    color: #10244a;
+    margin-bottom: 12px;
+}
+
+.car-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.car-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+
+.car-card:hover {
+    transform: translateY(-8px);
+}
+
+.car-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+    .car-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .car-container {
+        grid-template-columns: 1fr;
+    }
+}
