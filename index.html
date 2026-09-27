@@ -12,7 +12,10 @@
 
     <div class="logo">
 
-        <img src="images/logo.png" alt="SRI MAYIL TAXI">
+        <img src="images/logo.png"
+     alt="SRI MAYIL TAXI"
+     class="logo"
+     id="logoImage">
 
         <div class="logo-text">
             <span>SRI MAYIL TAXI</span>
@@ -131,19 +134,19 @@
     <div class="car-container">
 
         <div class="car-card">
-            <img src="images/car1.jpg" alt="SRI MAYIL TAXI Car">
+            <img src="images/car1.png" alt="SRI MAYIL TAXI Car">
         </div>
 
         <div class="car-card">
-            <img src="images/car2.jpg" alt="SRI MAYIL TAXI Car">
+            <img src="images/car2.png" alt="SRI MAYIL TAXI Car">
         </div>
 
         <div class="car-card">
-            <img src="images/car3.jpg" alt="SRI MAYIL TAXI Car">
+            <img src="images/car3.png" alt="SRI MAYIL TAXI Car">
         </div>
 
         <div class="car-card">
-            <img src="images/car4.jpg" alt="SRI MAYIL TAXI Car">
+            <img src="images/car4.png" alt="SRI MAYIL TAXI Car">
         </div>
 
     </div>
@@ -190,9 +193,9 @@
         📞 9043040088
     </a>
      <p>
-        📧 <a href="mailto:srimuthucabs@gmail.com">
-            srimayiltaxinkl@gmail.com
-        </a>
+        📧 <a href="mailto:srimayiltaxinkl@gmail.com" class="email-link">
+    srimayiltaxinkl@gmail.com
+</a>
     </p>
 
 </section>
@@ -209,6 +212,29 @@
     <p>© 2026 SRI MAYIL TAXI. All Rights Reserved.</p>
 
 </footer>
+<div class="logo-popup" id="logoPopup">
+    <span class="close-logo" id="closeLogo">&times;</span>
+    <img src="images/logo.png" alt="SRI MAYIL TAXI Logo">
+</div>
 
+<script>
+    const logoImage = document.getElementById("logoImage");
+    const logoPopup = document.getElementById("logoPopup");
+    const closeLogo = document.getElementById("closeLogo");
+
+    logoImage.addEventListener("click", function () {
+        logoPopup.style.display = "flex";
+    });
+
+    closeLogo.addEventListener("click", function () {
+        logoPopup.style.display = "none";
+    });
+
+    logoPopup.addEventListener("click", function (event) {
+        if (event.target === logoPopup) {
+            logoPopup.style.display = "none";
+        }
+    });
+</script>
 </body>
 </html>
