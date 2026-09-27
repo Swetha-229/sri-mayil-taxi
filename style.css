@@ -472,3 +472,42 @@ footer p {
         grid-template-columns: 1fr;
     }
 }
+.email-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.email-link:hover {
+    color: white;
+    text-decoration: underline;
+}
+.logo-image {
+    cursor: pointer;
+}
+
+.logo-popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-popup img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 15px;
+}
+
+.close-logo {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
